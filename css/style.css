@@ -65,11 +65,11 @@ header{
   justify-content: space-between;
   align-items: center;
 
-  z-index: 999;
   
   flex-wrap: wrap;
-
+  
   position: fixed;
+  z-index: 999;
 }
 
 
@@ -126,7 +126,7 @@ main img{
   width: 290px;
   height: 420px;
 
-
+/* ! si potrebbe anche non mettere position absolute a questa immagine in modo da mantenere le stesse dimensioni anche per la seconda immagine QUINDI IN QUESTO CASO BISOGNA RIMUOVERE ANCHE POSITION ABSOLUTE ALLA CLASSE description_product */
   position: absolute;
   top: 0;
   left: 0; 
@@ -135,12 +135,13 @@ main img{
 }
 
 
-
-.card img:nth-child(2) {
+/* * quando si va in hover sull'immagine si sostituisce con la seconda immagine  */
+/* ! con la classe .image quando si va in hover sul cuore non cambia l'immmagine ma solo il cuore */
+.card .image img:nth-child(2) { 
   display: none;
 }
 
-.card:hover img:nth-child(2) {
+.card .image:hover img:nth-child(2) {
   display: block;
 }
 
@@ -196,7 +197,6 @@ main img{
   left: 18%;
   bottom: 0%;
 }
-
 
 .brand{
   
@@ -279,8 +279,10 @@ main img{
   
 }
 
+/* * quando si va in hover sul cuore si colora di rosso SENZA SOSTITUIRE L'IMMAGINE DELL'ARTICOLO  */
 .container_heart:hover .heart {
   color: red;
+  cursor: pointer;
   /* display: block; */
   /* z-index: 999; */
 }
@@ -327,33 +329,3 @@ footer .col .row {
 .fa-brands{
   font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
