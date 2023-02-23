@@ -80,7 +80,6 @@ main{
 
   flex-wrap: wrap;
 
-  
 }
 
 .card{
@@ -88,16 +87,18 @@ main{
   min-width: 290px;
 
   margin: 20px;
-
+  
   border: 2px rgb(255, 0, 0) solid;
   
-  
+  position: relative;
 }
 
 main img{
   width: 290px;
   height: 420px;
+
   border: 2px rgb(0, 4, 255) solid;
+
 }
 
 
@@ -113,18 +114,33 @@ main img{
   font-weight: 700;
   padding: 5px;
 
+  position: absolute;
+  right: 0%;
+  top: 65%;
+  left: 0%;
+  bottom: 0%;
+
+  
 }
 
 .container_green{
   height: 25px;
-  min-width: 25px;
+  width: 110px;
   
   border: 2px rgb(255, 0, 0) solid;
-
+  
   background-color: green;
   color: white;
   font-weight: 700;
   padding: 5px;
+
+  /* display: inline-block; */
+
+  position: absolute;
+  right: 0%;
+  top: 65%;
+  left: 20%;
+  bottom: 0%;
 }
 
 
@@ -137,28 +153,37 @@ main img{
 .name_product{
   
   border: 2px rgb(255, 0, 0) solid;
-
+  
   font-weight: bold;
   text-transform: uppercase;
   
-
+  
   
 }
 
 
 .price{
+  /* width: 62px;
+  height: 30px; */
+
   border: 2px rgb(255, 0, 0) solid;
   
   color: red;
   padding: 5px;
+
+  display: inline-block;
 }
 
 
 .old_price{
+  /* width: 62px;
+  height: 30px; */
+
   border: 2px rgb(255, 0, 0) solid;
   
   text-decoration: line-through;
   padding: 5px;
+
 }
 
 
@@ -171,6 +196,12 @@ main img{
   padding: 5px;
   text-align: center;
   vertical-align: middle;
+
+  position: absolute;
+  right: 0%;
+  top: 2%;
+  /* left: 20%; */
+  bottom: 0%;
 }
 
 
