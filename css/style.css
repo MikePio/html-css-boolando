@@ -113,18 +113,37 @@ main img{
 
   border: 1px rgb(0, 255, 0) solid;
 
+  position: absolute;
+  top: 0;
+  left: 0; 
+  /* object-fit: cover; */
+
 }
 
-/* .card:hover img {
+
+
+.card img:nth-child(2) {
+  display: none;
+}
+
+.card:hover img:nth-child(2) {
   display: block;
-  /* z-index: 999; */
-} */
+}
+
+.description_product{
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 1%;
+
+  border: 1px rgb(0, 255, 0) solid;
+
+}
 
 .container_discount{
   height: 28px;
   width: 48px;
-  /* min-width: 25px;
-  max-width: 50px; */
+
 
   
   background-color: red;
@@ -238,19 +257,20 @@ main img{
   /* z-index: 1; */
 
   font-size: 30px;
-  color: red;
+  color: rgb(0, 0, 0);
   
   border: 1px rgb(0, 255, 0) solid;
-  display: none;
-
+  /* display: none; */
+  
   /* display: block; */
-
+  
   /* z-index: 998; */
-
+  
 }
 
 .container_heart:hover .heart {
-  display: block;
+  color: red;
+  /* display: block; */
   /* z-index: 999; */
 }
 
